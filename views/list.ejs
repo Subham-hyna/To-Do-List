@@ -1,0 +1,29 @@
+<%- include("header") -%>
+<h1 class="text-center">Welcome <span class="text-capitalize"><%=name%></span></h1>
+<div class="contain">
+  <div class="box" id="heading">
+    <h1> To Do List </h1>
+  </div>
+
+  <div class="box">
+
+    <% newListItems.forEach(function(item){ %>
+
+      <form action="/deleteItem" method="post">
+
+        <div class="item">
+          <button type="submit" name="checkbox" value="<%= item._id%>" class="btn btn-warning mx-3">X</button>
+          <p><%=  item.item  %></p>
+        </div>
+        <% }) %> 
+      </form>
+
+      <form class="item" action="/addItem" method="post">
+        <input type="text" class="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button class="button" type="submit" name="list">+</button>
+      </form>
+  </div>
+  <button class="btn btn-primary mx-auto my-4 text-center"><a href="/logout">Logout</a></button>
+</div>
+
+<%- include("footer") -%>

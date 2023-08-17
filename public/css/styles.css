@@ -1,0 +1,154 @@
+h1 {
+  color: #fff;
+  padding: 5px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #A683E3;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item>p{
+  margin-top: 14px;
+  max-width: 287px;
+  overflow-x: scroll;
+}
+
+.item>p::-webkit-scrollbar {
+  display: none;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button>a{
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+.text {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+.text:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alerterror {
+  padding: 30px;
+  background-color: rgb(225 29 72);
+  box-shadow: 0 10px 15px -3px #9f1239, 0 4px 6px -4px #9f1239;
+  color: white;
+  position:absolute; 
+  border-radius: 10px;
+  right: 20px;
+  top: 20px;
+}
+
+.alertsuccess{
+  padding: 30px;
+  background-color: rgb(5 150 105);
+  box-shadow: 0 10px 15px -3px #16a34a, 0 4px 6px -4px #16a34a;
+  color: white;
+  position:absolute; 
+  border-radius: 10px;
+  right: 0;
+}
+.alertContent{
+  position: relative;
+}
+
+.alertContent>span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.closebtn {
+  padding-top: 0px;
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  position: absolute; 
+  top: -23px;
+  right: -23px; 
+  cursor: pointer;
+  /* transition: 0.3s; */
+}
+
+.closebtn:hover {
+  color: black;
+}
+
